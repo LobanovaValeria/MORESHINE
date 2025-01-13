@@ -1,0 +1,79 @@
+.App {
+  /* background-color: #121617; */
+  text-align: center;
+  box-sizing: border-box;
+  font-size: inherit;
+  overflow-x: hidden;
+  width: 100%;
+  color: #fff;
+  height: 100vh;
+  background-color: #121617;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,p{
+  margin: 0;
+}
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+section{
+  margin-top: 100px;
+}
+.wrapperSections{
+  padding: 20px;
+}
+/* @media(max-width:1200px){
+  .App{
+    font-size: 1.8rem;
+  }
+  
+}
+@media(max-width:1000px){
+  .App{
+    font-size: 1.5rem;
+  }
+  
+}
+@media(max-width:800px){
+  .App{
+    font-size: 1.3rem;
+  }
+  
+}
+@media(max-width:700px){
+  .App{
+    font-size: 1.1rem;
+  }
+  
+}
+@media(max-width:600px){
+  .App{
+    font-size: 1rem;
+  }
+  
+}
+@media(max-width:540px){
+  .App{
+    font-size: 1rem;
+  }
+  
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+

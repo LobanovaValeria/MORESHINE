@@ -1,0 +1,16 @@
+.reviews_wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin: 70px 220px;
+    gap: 20px;
+    position: relative;
+}
+.rev{
+    width: 20rem;
+    height: 17.5rem;
+    position: absolute;
+    right: 45%;
+    bottom: -30px;
+    box-shadow: 20px 20px 4px 0 rgba(12,14,15, 59%);
+    background-color: #121617;
+}

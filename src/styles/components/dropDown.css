@@ -1,0 +1,35 @@
+.wrapper_dropDown{
+    position: absolute;
+    top: -38px;
+    right: 0;
+    z-index: 5;
+}
+.category{
+    background-color: #121617;
+    display: flex;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0 5vw;
+    align-items: center;
+    gap: 2vw;
+}
+.category img{
+    width: 20px;
+    height: 20px;
+}
+.category-list{
+    visibility: hidden;
+    transform: translateY(-5vw);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.category-list.open{
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+.category-list li{
+    cursor: pointer;
+}
+.category-list{
+    padding: 0;
+}

@@ -1,0 +1,72 @@
+.aboutMaterials{
+    text-align: start;
+
+    
+}
+.aboutMaterials span{
+    font-weight: bold;
+}
+.aboutMaterials h3{
+    
+    margin: 0;
+}
+
+.aboutMaterials_wrapper{
+    padding: 9vw 13vw;
+}
+.pluses{
+    width: 60%;
+    margin: 20px auto;
+    
+}
+.plus{
+    position: relative;
+    padding-left: 25px;
+}
+.plus::before{
+    content: "✔";
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+}
+.aboutMaterials-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.item_text{
+    width: 55vw;
+    text-align: justify;
+}
+.aboutCoatings{
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+}
+.coating{
+    width: 7rem;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: justify;
+    
+    
+}
+.coating img{
+    width: 7rem;
+    height: 7rem;
+
+}
+.results{
+    text-align: justify;
+}
+@media(max-width:760px){
+    .coating img {
+        width: 11vw;
+        height: 11vw;
+        }
+}

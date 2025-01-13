@@ -1,0 +1,16 @@
+.title{
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+}
+.title_text{
+    margin: 0;
+    position: absolute;
+    top: -1.25rem;
+    left: 14vw;
+    display: inline-block;
+    padding: 0 2.5rem;
+    background-color: #121617;
+    vertical-align: text-bottom;
+    line-height: 36px;
+}

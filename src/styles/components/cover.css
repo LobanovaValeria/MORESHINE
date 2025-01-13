@@ -1,0 +1,126 @@
+.cover{
+    position: relative;
+    height: 100vh;
+    background-image: url('../../assets/images/cover.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cover_wrapper{
+    background-color: rgba(9, 11, 10, 50%);
+    width: 90vw;
+    height: 50vh;
+    padding: 30px;
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cover_name{
+    font-size: 6.5rem;
+}
+.cover_subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+   color: #ffffffad;
+}
+.order{
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #51676A;
+    height: 10vh;
+    width: 25vw;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.order:hover{
+    background-color: #2b3738;
+}
+.scrollDown{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 30px;
+}
+@media(max-width:1000px){
+    .cover_name{
+        /* font-size: 10rem; */
+    }
+    .cover_subtitle{
+        /* font-size: 2.3rem; */
+    }
+}
+@media(max-width:1000px){
+    /* .cover_name{
+        font-size: 7rem;
+    }
+    .cover_subtitle{
+        font-size: 1.8rem;
+    } */
+    .order img{
+        width: 20px;
+    }
+    .order{
+        width: 28vw;
+    }
+    .cover_wrapper{
+        height: 40vh;
+    }
+}
+@media(max-width:930px){
+    .cover{
+        background-image: url('../../assets/images/front.webp');
+    }
+}
+@media(max-width:800px){
+    .cover_wrapper{
+        width: 80vw;
+    }
+    .order{
+        height: 8vh;
+    }
+    
+}
+
+@media(max-width:540px){
+    
+    .scrollDown{
+        right: 50%;
+       margin-right: -81px;
+    }
+    .order{
+        width: 55vw;
+        /* gap: 2.5rem; */
+    }
+    .cover_wrapper{
+        height: 30vh;
+    }
+    .cover_subtitle{
+        margin-bottom: 4rem;
+    }
+
+}
+@media(max-width:400px){
+    .cover_name{
+        font-size: 3rem;
+    }
+    .cover_subtitle{
+        font-size: 1.1rem;
+    }
+    .cover_wrapper{
+        width: 70vw;
+    }
+    
+}

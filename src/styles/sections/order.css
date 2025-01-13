@@ -1,0 +1,23 @@
+.order_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 50px;
+}
+.wrapper_btn{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+}
+.wrapper_text{
+  
+    width: 50vw;
+}
+.telegram:hover{
+    background-color: #2AABEE;
+}
+.whatsapp:hover{
+    background-color: #25D366;
+}
