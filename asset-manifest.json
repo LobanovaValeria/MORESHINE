@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MORESHINE/static/css/main.66d6f213.css",
-    "main.js": "/MORESHINE/static/js/main.31899bc5.js",
+    "main.css": "/MORESHINE/static/css/main.684e58df.css",
+    "main.js": "/MORESHINE/static/js/main.102a24a2.js",
     "static/js/488.58ebbd6a.chunk.js": "/MORESHINE/static/js/488.58ebbd6a.chunk.js",
     "static/media/cover.png": "/MORESHINE/static/media/cover.2a4bf7a82161737d3bd9.png",
     "static/media/cover.webp": "/MORESHINE/static/media/cover.cc3e68fa30fb90204a0f.webp",
@@ -18,12 +18,12 @@
     "static/media/scrollDown.svg": "/MORESHINE/static/media/scrollDown.31b3df86cdb41b756465831793d4960b.svg",
     "static/media/next.svg": "/MORESHINE/static/media/next.f19e18a35e97d3a31f35c60f55def273.svg",
     "static/media/down.svg": "/MORESHINE/static/media/down.396c9ad3cccf3a925a2e50d5d6d09de7.svg",
-    "main.66d6f213.css.map": "/MORESHINE/static/css/main.66d6f213.css.map",
-    "main.31899bc5.js.map": "/MORESHINE/static/js/main.31899bc5.js.map",
+    "main.684e58df.css.map": "/MORESHINE/static/css/main.684e58df.css.map",
+    "main.102a24a2.js.map": "/MORESHINE/static/js/main.102a24a2.js.map",
     "488.58ebbd6a.chunk.js.map": "/MORESHINE/static/js/488.58ebbd6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66d6f213.css",
-    "static/js/main.31899bc5.js"
+    "static/css/main.684e58df.css",
+    "static/js/main.102a24a2.js"
   ]
 }
