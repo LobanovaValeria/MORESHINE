@@ -1,5 +1,6 @@
 {
   "name": "more-shine",
+  "homepage": "https://lobanovavaleria.github.io/MORESHINE/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,9 +12,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -32,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

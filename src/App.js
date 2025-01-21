@@ -14,14 +14,14 @@ function App() {
     <div className="App">
       <Header/>
       <Cover/>
-      <div className='wrapperSections'>
+      
         <AboutBrand/>
         <Catalog/>
         <AboutMaterials/>
         <Reviews/>
         <Order/>
         <Footer/>
-      </div>
+      
     </div>
   );
 }

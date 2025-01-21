@@ -10,7 +10,6 @@ import DropDown from '../DropDown';
 import imagesData from '../../images.json';
 import { useEffect } from 'react';
 
-
 const Slider = () => {
   const [selected, setSelected] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -18,7 +17,6 @@ const Slider = () => {
   useEffect(() => {
     setImages(imagesData[selected]);
   }, [selected]);
- 
 
   const handleNextClick = () => {
     if (currentSlide + 1 <= 4) {
@@ -30,22 +28,24 @@ const Slider = () => {
 
   return (
     <section className="catalog" id="catalog">
-      <SectionTitle title={'Каталог'}/>
+      <SectionTitle title={'Каталог'} />
       <DropDown selected={selected} setSelected={setSelected} />
-      <div className="catalog_wrapper">
-        <div className="wrapper_Slider">
-            <div className='square sOne'></div>
-            <div className='square sTwo'></div>
-          <div className="slider">
-            <div
-              className="slider-inner"
-              style={{ transform: `translateX(${-currentSlide * 20}%)` }}
-            >
-              {images.map((item, index) => (
-                <div className="slide" key={index}>
-                  <img src={item.url1} alt={index} />
-                </div>
-              ))}
+      <div className="wrapper_section">
+        <div className="catalog_wrapper">
+          <div className="wrapper_Slider-One">
+            <div className="square sOne"></div>
+            <div className="square sTwo"></div>
+            <div className="slider">
+              <div
+                className="slider-inner"
+                style={{ transform: `translateX(${-currentSlide * 20}%)` }}
+              >
+                {images.map((item, index) => (
+                  <div className="slide" key={index}>
+                    <img src={`${process.env.PUBLIC_URL}${item.url1}`} alt={index} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="details">
@@ -54,22 +54,29 @@ const Slider = () => {
             <div className="slider two">
               <div
                 className="slider-inner"
-                style={{ transform: `translateX(${-currentSlide * 20}%)` }}
+                style={{ transform: `translateX(${-currentSlide * 16.8}%)` }}
               >
                 {images.map((item, index) => (
-                  <div className="slide" key={index}>
-                    <img src={item.url2} alt={index} />
+                  <div className="slide slide-circle" key={index}>
+                    <img src={`${process.env.PUBLIC_URL}${item.url2}`} alt={index} />
                   </div>
                 ))}
               </div>
             </div>
-            <button className="btn_next" onClick={handleNextClick}>
+            {/* <button className="btn_next" onClick={handleNextClick}>
+              <img src={next} alt="next" />
+            </button> */}
+          </div>
+          <button className="btn_next btn_two" onClick={handleNextClick}>
             <img src={next} alt="next" />
           </button>
-          </div>
-          <button className="btn_next btn_two" onClick={handleNextClick}><img src={next} alt="next" /></button>
         </div>
-        <a target="_blank" rel="noreferrer" href="https://t.me/moreshine_brand" className="order btn-catalog">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://t.me/moreshine_brand"
+          className="order btn-catalog"
+        >
           больше украшений в telegram-канале
         </a>
       </div>

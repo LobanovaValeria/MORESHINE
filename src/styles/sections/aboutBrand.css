@@ -1,106 +1,55 @@
-.aboutBrand{
-    text-align: start;
+.aboutBrand {
+  text-align: start;
+  margin-top: 10vw;
 }
-.aboutBrand_wrapper{
-    display: flex;
-    height: 45vw;
-    align-items: center;
-    justify-content: space-between;
+.aboutBrand_wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-.aboutBrand_text{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 40%;
-    padding: 10vw;
+.aboutBrand_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+  padding: 0 5vw;
 }
-.aboutBrand_photo{
-    position: relative;
-    background-image: url('../../assets/images/backFront.png');
-    background-size: contain;
-    width: 45vw;
-    height: 90%;
-    background-repeat: no-repeat;
+.aboutBrand_photo {
+  position: relative;
+  width: 35%;
+  margin-bottom: 10%;
 }
-.photo_square{
+.aboutBrand_photo img {
+  width: 100%;
+}
+.photo_square {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  top: -4rem;
+  left: 30%;
+  transform: rotate(60deg);
+  border: 3px solid #8d8f8f;
+  margin-bottom: 11%;
+}
+
+@media (min-width: 1500px) {
+  .photo_square {
+    width: 256px;
+    height: 256px;
+  }
+}
+@media (max-width: 550px) {
+  .photo_square {
     width: 15vw;
     height: 15vw;
-    position: absolute;
-    top: -4rem;
-    left: 30%;
-    transform: rotate(60deg);
-    border: 3px solid #8d8f8f;;
-}
-.photo_oval{
-    position: absolute;
-    top: 5.5rem;
-    left: 1.1rem;
-    width: 55%;
-    height: 19.25rem;
-    clip-path: ellipse(8rem 9.5rem);
-    background-image: url(http://localhost:3000/static/media/cover.2a4bf7a82161737d3bd9.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-@media(max-width:1397px){
-    .photo_oval{
-        clip-path: ellipse(7rem 9.5rem); 
-    }
-  
-}
-@media(max-width:1052px){
-    .photo_oval{
-        clip-path: ellipse(6rem 7.5rem);
-    }
-  
-}
-@media(max-width:574px){
-    .photo_oval{
-        clip-path: ellipse(6rem 7.5rem);
-        top: 7.5rem;
-        width: 63%;
-    }
-    .aboutBrand_wrapper{
-        height: 70vw;
-    }
-  
-}
-
-@media(max-width:432px){
-    .photo_oval{
-        clip-path: ellipse(6rem 7.5rem);
-        top: 3.5rem;
-        width: 72%;
-    }
-      .aboutBrand_wrapper{
-        height: 100vw;
-    }
-    .aboutBrand_photo{
-        height: 50%;
-    }
-  
-}
-@media(max-width:414px){
-    .photo_oval{
-
-        clip-path: ellipse(5.8rem 7.5rem);
-    }
-}
-@media(max-width:400px){
-    .photo_oval{
-
-        clip-path: ellipse(4rem 4.9rem);
-        top: -0.5rem;
-    }
-}
-
-@media(max-width:340px){
-    .aboutBrand_wrapper{
-        height: 120vw;
-    }
-}
-@media(max-width:320px){
-    .aboutBrand_wrapper{
-        height: 140vw;
-    }
+    top: -3rem;
+    left: 43%;
+    border: 1px solid #8d8f8f;
+  }
+  .aboutBrand_photo{
+    width: 41%;
+    margin: 0;
+  }
 }

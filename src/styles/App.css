@@ -25,12 +25,48 @@ button{
   border: none;
   cursor: pointer;
 }
-section{
-  margin-top: 100px;
+/* section{
+  margin-top: 10vw;
+} */
+.wrapper_section{
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
+  padding: 3vw 0;
 }
-.wrapperSections{
-  padding: 20px;
+@media(min-width:1500px){
+  .wrapper_section{
+    width: 1296px;
+    /* padding: 50px 0; */
+    
+  }
 }
+@media(max-width:1080px){
+  .wrapper_section{
+    padding: 5vw 0;
+  }
+}
+@media(max-width:740px){
+  .wrapper_section{
+    padding: 10vw 0;
+  }
+}
+@media(max-width:550px){
+  .wrapper_section{
+    padding: 15vw 0;
+  }
+}
+/* @media(max-width:1440px){
+  .wrapper_section{
+    padding: 10vw 0;
+  }
+} */
+/* @media(min-width: 1500px){
+  .wrapperSections{
+    width: 1500px;
+    margin: 0 auto;
+  }
+} */
 /* @media(max-width:1200px){
   .App{
     font-size: 1.8rem;

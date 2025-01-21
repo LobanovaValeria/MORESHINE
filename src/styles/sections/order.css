@@ -1,23 +1,38 @@
 .order_wrapper{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    gap: 50px;
+    height: 36vw;
+    gap: 6%;
 }
 .wrapper_btn{
     display: flex;
     flex-direction: column;
-    height: 60%;
+    height: 66%;
     justify-content: space-between;
+    width: 30%;
 }
 .wrapper_text{
   
-    width: 50vw;
+    width: 55%;
 }
 .telegram:hover{
     background-color: #2AABEE;
 }
 .whatsapp:hover{
     background-color: #25D366;
+}
+@media(max-width:550px){
+    .wrapper_text{
+        width: 45%;
+    }
+    .wrapper_btn{
+       height: 87%;
+    }
+}
+@media(max-width:400px){
+    .wrapper_text{
+        width: 40%;
+    }
 }
